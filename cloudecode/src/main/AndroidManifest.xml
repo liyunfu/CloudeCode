@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.lyf.cloudecode">
+    <!-- 外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 许可振动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 打开闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 许可使用照相机 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 许可调用相机硬件 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 许可调用相机自动对焦 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activity.ScanerCodeActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
